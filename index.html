@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz interativo sobre esportes: teste seus conhecimentos!">
+  <title>Quiz de Esportes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="cabecalho">
+      <p class="etiqueta">DESAFIO ESPORTIVO</p>
+      <h1>Quiz de Esportes</h1>
+      <p class="subtitulo">Teste seus conhecimentos sobre o mundo dos esportes!</p>
+    </header>
+
+    <section class="cartao" aria-live="polite">
+      <div class="progresso">
+        <span id="contador">Pergunta 1 de 5</span>
+        <span id="pontuacao">Pontos: 0</span>
+      </div>
+      <div class="barra-fundo"><div id="barra-progresso"></div></div>
+
+      <h2 id="pergunta">Carregando pergunta...</h2>
+      <div id="opcoes" class="opcoes"></div>
+      <p id="mensagem" class="mensagem" role="status"></p>
+      <button id="proximo" class="botao botao-principal" disabled>Próxima pergunta</button>
+    </section>
+
+    <footer>Projeto educativo desenvolvido com HTML, CSS e JavaScript.</footer>
+  </main>
+</body>
+</html>
